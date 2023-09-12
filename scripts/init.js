@@ -16,7 +16,7 @@ class GridNumbersLayer extends CanvasLayer {
   }
 
   /**
-   * Weather to show numbers
+   * Whether to show numbers
    * @type {boolean}
   */
   showNumbers;
@@ -153,11 +153,11 @@ class GridNumbersLayer extends CanvasLayer {
     /**
     * FIXME:
     * Now we have a problem where GridNumbers layer can't
-    * automatically update after changing grind settings or any other tearDown
-    * beauce it doesn't know the Grid's properties in drawing time. 
+    * automatically update after changing grid settings or any other tearDown
+    * because it doesn't know the Grid's properties at drawing time. 
     * So we handle this by disabling the grid after each grid change. 
-    * This shold not happen frequently so its fine for now. 
-    * But should be fixed in future
+    * This should not happen frequently so it's fine for now. 
+    * But should be fixed in future.
     **/
     this.showNumbers = false;
     return this;
